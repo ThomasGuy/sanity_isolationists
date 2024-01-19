@@ -1,5 +1,5 @@
 import { BiPalette as icon } from 'react-icons/bi';
-import {defineType, defineField, defineArrayMember} from 'sanity'
+import { defineType, defineField, defineArrayMember } from 'sanity'
 
 const artist = defineType({
   name: 'artist',
@@ -64,7 +64,7 @@ const artist = defineType({
       name: 'links',
       title: 'Website Links',
       type: 'array',
-      of: [{ type: 'link' }],
+      of: [defineArrayMember({ type: 'link' })],
     }),
     defineField({
       title: 'Social Media',

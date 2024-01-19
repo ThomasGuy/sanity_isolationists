@@ -27,7 +27,7 @@ const soloImg = defineType({
       type: 'slug',
       options: {
         source: 'title',
-        maxLength: 100,
+        maxLength: 80,
       },
       validation: Rule => Rule.required(),
     }),

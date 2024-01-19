@@ -3,7 +3,7 @@ import { AiOutlinePicture as icon } from 'react-icons/ai';
 
 async function getSlug(doc, context) {
   const {getClient} = context;
-  const client = getClient({ apiVersion: '2024-01-01'})
+  const client = getClient({ apiVersion: '2024-01-01' })
   const subref = (context.parent.subject._ref)
   const artref = (context.parent.artist._ref)
   const subject = await client.fetch(`*[_id == "${subref}"][0]`)

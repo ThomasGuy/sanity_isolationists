@@ -8,6 +8,7 @@ export default defineConfig({
   title: 'isolationists',
   projectId: 'ukbaygfd',
   dataset: 'production',
+  perspective: 'published',
   plugins: [structureTool(), visionTool()],
   schema: {
     types: schemaTypes,
